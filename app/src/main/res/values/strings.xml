@@ -1,0 +1,186 @@
+<resources>
+    <string name="app_name">Arys Marketer</string>
+    <string name="username">Username:</string>
+    <string name="Product.Name">نام محصول:</string>
+    <string name="sender">فرستنده:</string>
+    <string name="receiver">دریافت کننده:</string>
+    <string name="location">محل تحویل:</string>
+    <string name="count">تعداد درخواستی:</string>
+    <string name="offer">هدیه:</string>
+    <string name="PharmacySelect">برای انتخاب مرکز کلیک کنید</string>
+    <string name="ProductSelect">برای انتخاب محصول کلیک کنید</string>
+    <string name="ProductPrice">قیمت محصول:</string>
+    <string name="totalPrice">جمع کل:</string>
+    <string name="data">تاریخ:</string>
+    <string name="status">وضعیت:</string>
+    <string name="number">0123456789</string>
+    <string name="digit_farsi">ا ژآبپثتجچحخدزذرطظکگسشمهلفقصضیوعغن</string>
+    <string name="digit_english">ABCDEFGHIJKLONMPQRSWVTYUXZ_.abcdefghijklonmpqrstwvuyxz0123456789 </string>
+    <string name="digit_email">ABCDEFGHIJKLONMPQRSWVTYUXZ@_.abcdefghijklonmpqrstwvuyxz0123456789</string>
+    <string name="Product.Description">درباره محصول</string>
+    <string name="productsBrand">برند محصول: </string>
+    <string-array name="app_arrays">
+        <item>سمت کاربر را مشخص کنید</item>
+        <item>مدیر</item>
+        <item>بازاریاب</item>
+        <item>انباردار</item>
+        <item>باربری</item>
+    </string-array>
+    <string name="title_activity_modir">ModirActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="product.price"> قیمت محصول </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="product">محصولات</string>
+    <string name="Report">گزارشکار</string>
+    <string name="store">انبار</string>
+    <string name="Request">درخواست ها</string>
+    <string name="SubmitRequest">ثبت درخواست</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="inventory_count">تعداد موجود :</string>
+    <string name="inventory">موجودی</string>
+    <string name="deducted">کسر شده</string>
+    <string name="inserted">افزوده شده</string>
+    <string name="request_deduct">درخواست</string>
+    <string name="transaction">تراکنش</string>
+    <string name="outProduct">محصول از انبار خارج شد</string>
+    <string name="Api_Map_kEY">eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImU0ZGRhNGMxMjg5YmJhMmNhODMzNGFmMGViOGVhY2QzODRlYzcwNDY2OTVkOGIwYmM4MGZhMjMzMzhmY2ZkOTM0MTU4N2ZlYTM5ZDI0YjBkIn0.eyJhdWQiOiIxODU1MCIsImp0aSI6ImU0ZGRhNGMxMjg5YmJhMmNhODMzNGFmMGViOGVhY2QzODRlYzcwNDY2OTVkOGIwYmM4MGZhMjMzMzhmY2ZkOTM0MTU4N2ZlYTM5ZDI0YjBkIiwiaWF0IjoxNjU2NDcyOTU2LCJuYmYiOjE2NTY0NzI5NTYsImV4cCI6MTY1OTA2NDk1Niwic3ViIjoiIiwic2NvcGVzIjpbImJhc2ljIl19.IKafJ0Y21Ju6GBmcIH-tyYYfX3kf4MteVzIyQtj17cLMHp2KNlgxIlIIM0tOprT4OXhkVmplk1FEayOAy1I-3AQrq4z-2envDx0mXXn4c6ArdQHPwZ8gMjaJD-hdCLzbMDUm4YLr6YdxmmMESxvC6VqzqRmdr8zxZH4rHvnkajP1OVZV02oMCFeQ-HAWT4PFXpmRyYtXkkJmvRlv5Eoant7923iLChI8PdwuAyYSQjVj8BK5JLwu9cyVJpuU9SD3g6cgz28IYcNuGmCY4XdwrNk00FOi5xTrI9ssW4zQDbG4uT1XZgDDBdpzUpC_OC-io8_3ljDPVRl_b7ATrhZmbQ</string>
+    <string name="id">ID</string>
+    <string name="cancel">انصرف</string>
+    <string name="profile">Profile</string>
+    <string name="show_all">نمایش همه</string>
+    <string name="show_going_send">نمایش آنها که درحال ارسال هستند</string>
+    <string name="show_going_check">نمایش آنها که درحال بررسی هستند</string>
+    <string name="show_receivered">نمایش آنها که تحویل داده شده هستند</string>
+    <string name="brand">برند محصول</string>
+    <string name="FamilyName">نام و نام خانوادگی:</string>
+    <string name="username_farsi">نام کاربری:</string>
+    <string name="Address">آدرس:</string>
+    <string name="phone_farsi">شماره تلفن:</string>
+    <string name="email_farsi">ایمیل آدرس:</string>
+    <string name="Barthday_farsi">تاریخ تولد:</string>
+    <string name="Side_farsi">سمت شما در شرکت:</string>
+    <string name="SubmitData">ثبت اطلاعات</string>
+    <string name="Edit_profile_farsi">ویرایش اطلاعات</string>
+    <string name="logout_farsi">خروج از حساب</string>
+    <string name="message_farsi">پیام:</string>
+    <string name="send_farsi">ارسال</string>
+    <string name="start_work_farsi">شروع کار</string>
+    <string name="stop_work_farsi">اتمام کار</string>
+    <string name="MapLocWork_farsi">منطقه کاری:</string>
+    <string name="MapTimeWork">زمان کاری امروز:</string>
+    <string name="new_product_tex">new product</string>
+    <string name="insert_store_count">تعداده افزوده شده به انبار :</string>
+    <string name="insertStore">افزودن به انبار</string>
+    <string name="NewUser">استخدام نیرو جدید</string>
+    <string name="set_data_user">برنامه کارکنان</string>
+    <string name="insert_user">استخدام کاربر</string>
+    <string name="report_today">گزارشکار امروز:</string>
+    <string name="region_farsi">منظقه:</string>
+    <string name="report_farsi">گزارش:</string>
+    <string name="set_calculator">تنظیم برنامه</string>
+    <string name="saturday_farsi">شنبه</string>
+    <string name="sunday_farsi">یکشنبه</string>
+    <string name="monday_farsi">دوشنبه</string>
+    <string name="tuesday_farsi">سه شنبه</string>
+    <string name="wednesday_farsi">چهارشنبه</string>
+    <string name="thursday_farsi">پنجشنبه</string>
+    <string name="comment">توضیح</string>
+    <string name="region">منطقه</string>
+    <string name="freight">باربری</string>
+    <string name="sended_product_farsi">محصول تحویل داده شد</string>
+    <string name="Routing">مسیر ها</string>
+    <string name="startWorkTime_farsi">زمان شروع :</string>
+    <string name="EndTimeWork_farsi">زمان اتمام :</string>
+    <string name="price_tesrt">1,250,000 تومان</string>
+    <string name="subscription_time">مدت زمان اشتراک:</string>
+    <string name="month_farsi">ماهانه</string>
+    <string name="buy_subscription">خرید اشتراک</string>
+    <string name="subscription_acount_farsi">اشتراک حساب</string>
+    <string name="login_farsi">ورود کاربر</string>
+    <string name="SignUp_farsi">شرکت دار هستم</string>
+    <string name="password_farsi">رمز ورود:</string>
+    <string name="Confirm_password_farsi">تکرار رمز ورود:</string>
+    <string name="companyName_farsi">نام شرکت:</string>
+    <string name="SignUpText_farsi">ثبت نام</string>
+    <string name="NoneSub_text">مهلت زمان اشتراک استفاده از این اپلیکیشن به اتمام رسیده است برای ادامه و استفاده مجدد از این اپلیکیشن نیاز است مدیر شرکت اشتراک تهیه نماید.</string>
+    <string name="selection">Selection</string>
+    <string name="Insert_new_report_farsi">افزودن گزارشکار</string>
+    <string name="insert_new_store">افزودن بار جدید به انبار</string>
+    <string name="insert_new_product_farsi">افزودن محصول جدید</string>
+    <string name="insert_new_request_farsi">افزودن درخواست جدید</string>
+    <string name="close_page_farsi">بستن صفحه</string>
+    <string name="edit_product_farsi">ویرایش محصول</string>
+    <string name="DeleteProduct">حذف محصول</string>
+    <string name="edit_product">ویرایش شود</string>
+    <string name="product_background_text">هیچ محصولی موجود نیست!</string>
+    <string name="request_text_background">هیچ درخواستی ثبت نشده!</string>
+    <string name="companyAddress">آدرس شرکت:</string>
+    <string name="save">ذخیره</string>
+    <string name="ChangePasswordText">آیا نیاز دارید رمز عبور خود را تغیر دهید؟</string>
+    <string name="editProfile">ویرایش اطلاعات</string>
+    <string name="centerList">لیست مراکز</string>
+    <string name="search">جستوجو:</string>
+    <string name="centerListText">لیست مراکز</string>
+    <string name="insert">insert</string>
+    <string name="ArysCompany">شرکت آریس</string>
+    <string name="province">استان:</string>
+    <string name="city">شهرستان:</string>
+    <string name="activity">حوزه فعالیت:</string>
+    <string name="centerName">نام مرکز:</string>
+    <string name="centerLocation">آدرس مرکز:</string>
+    <string name="centerPhone">شماره تلفن مرکز:</string>
+    <string name="centerProvince">استان مرکز:</string>
+    <string name="centerCity">شهر مرکز:</string>
+    <string name="centerActivity">حوزه فعالیت:</string>
+    <string name="insertToCenter">افزودن به لیست مراکز</string>
+    <string name="goToWork_farsi">شروع کار</string>
+    <string name="editInfo">ویرایش اطلاعات</string>
+    <string name="UserList">لیست و اطلاعات کارکنان</string>
+    <string name="company">نام شرکت:</string>
+    <string name="editInformation">ویرایش اطلاعات</string>
+    <string name="delete_center">حذف مرکز</string>
+    <string name="deleteUser">اخراج کاربر</string>
+    <string name="not_work">روز کاری ثبت نشده</string>
+    <string name="not_report">هیچ گزارشی ثبت نشده است!</string>
+    <string name="not_transaction">هیچ تراکنشی وجود ندارد</string>
+    <string name="not_Center">هیچ مرکزی افزوده نشده</string>
+    <string name="not_calendar">هیچ برنامه ای برای این کاربر تنظیم نشده!</string>
+    <string name="subscription_acount">اشتراک حساب</string>
+    <string name="buyName">نام خریدار:</string>
+    <string name="day_start">تاریخ شروع:</string>
+    <string name="day_end">تاریخ اتمام:</string>
+    <string name="hours">ساعت:</string>
+    <string name="amount">مبلغ:</string>
+    <string name="card_number">شماره کارت</string>
+    <string name="code_pagiri">کد پیگیری:</string>
+    <string name="side_in_company">سمت کاربر در شرکت :</string>
+    <string name="internet_not_connection">اتصال اینترنت شما قطع میباشد</string>
+    <string name="try_agaien_connn">تلاش مجدد برای اتصال</string>
+    <string name="find_user">find user</string>
+    <string name="filter">Filter</string>
+    <string-array name="pharmacyActivity_arrays">
+        <item></item>
+        <item>تجهیزات پزشکی</item>
+        <item>داروخانه</item>
+        <item>آرایشی بهداشتی</item>
+        <item>بیمارستان</item>
+        <item>تجهیزات موبایل</item>
+        <item>مواد خوراکی</item>
+        <item>پوشاک</item>
+        <item>سایر…</item>
+    </string-array>
+    <string name="title_activity_change_password">ChangePasswordActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="this_pass">رمز عبور فعلی:</string>
+    <string name="new_pass">رمز عبور جدید:</string>
+    <string name="confirm_pass">تکرار رمز عبور:</string>
+    <string name="change_pass">تغیر رمز عبور</string>
+
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".activitys.TransactionFilterActivity">
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintRight_toRightOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintBottom_toBottomOf="parent">
+       <com.google.android.material.checkbox.MaterialCheckBox
+           android:id="@+id/TransactionFilterCheckBox1"
+
+           android:checked="true"
+         android:textStyle="bold"
+           android:padding="10dp"
+           android:layout_margin="10dp"
+           android:fontFamily="@font/b_nazanin"
+           android:text="@string/show_all"
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           app:layout_constraintRight_toLeftOf="@id/TransactionFilterCheckBox2"
+           app:layout_constraintLeft_toLeftOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintBottom_toBottomOf="parent"/>
+       <com.google.android.material.checkbox.MaterialCheckBox
+           android:id="@+id/TransactionFilterCheckBox2"
+           android:textStyle="bold"
+           android:padding="10dp"
+           android:layout_margin="10dp"
+           android:fontFamily="@font/b_nazanin"
+           android:text="@string/deducted"
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           app:layout_constraintRight_toLeftOf="@id/TransactionFilterCheckBox3"
+          app:layout_constraintLeft_toRightOf="@id/TransactionFilterCheckBox1"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintBottom_toBottomOf="parent"/>
+       <com.google.android.material.checkbox.MaterialCheckBox
+           android:id="@+id/TransactionFilterCheckBox3"
+           android:textStyle="bold"
+           android:padding="10dp"
+           android:layout_margin="10dp"
+           android:fontFamily="@font/b_nazanin"
+           android:text="@string/inserted"
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           app:layout_constraintLeft_toRightOf="@id/TransactionFilterCheckBox2"
+app:layout_constraintRight_toRightOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintBottom_toBottomOf="parent"/>
+   </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

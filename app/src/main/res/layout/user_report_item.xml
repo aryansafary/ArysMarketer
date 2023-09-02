@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@drawable/cover_stroke_dont_have_color"
+        android:id="@+id/user_const"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:id="@+id/report_user_profile"
+            android:src="@drawable/ic_person"
+            android:background="@drawable/profile_form"
+android:layout_margin="25dp"
+            android:padding="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:contentDescription="@string/profile" />
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/report_user_username"
+            android:textStyle="bold"
+            style="@style/TextAppearance.Material3.BodyMedium"
+            android:text="@string/username"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+app:layout_constraintLeft_toRightOf="@id/report_user_profile"
+            app:layout_constraintRight_toRightOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

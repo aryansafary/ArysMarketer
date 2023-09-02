@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.TransactionFragment">
+    <com.google.android.material.textview.MaterialTextView
+        android:visibility="gone"
+        android:layout_marginTop="75dp"
+        android:id="@+id/Transaction_text_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/not_transaction"
+        style="@style/TextAppearance.AppCompat.Display1"
+        android:fontFamily="@font/b_nazanin"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/Transaction_text_background2"
+       app:layout_constraintTop_toBottomOf="@id/transaction_filter"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+    <com.airbnb.lottie.LottieAnimationView
+        android:visibility="gone"
+        android:id="@+id/Transaction_text_background2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:lottie_rawRes="@raw/empty_transaction"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Transaction_text_background"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/store_recycler"
+    tools:listitem="@layout/transaction_item"
+    app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintTop_toBottomOf="@id/transaction_filter"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/transaction_filter"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/store_recycler">
+        <ImageView
+            android:id="@+id/transaction_icon_filter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:src="@drawable/ic_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/transaction" />
+        <com.google.android.material.textview.MaterialTextView
+            android:textStyle="bold"
+            android:text="Filter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/transaction_icon_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

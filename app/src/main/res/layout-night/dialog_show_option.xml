@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/showOption_1form1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/cover_stroke_dont_have_color"
+       >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@drawable/ic_new_option"
+            style="@style/ThemeOverlay.Material3.Button"
+            android:id="@+id/showOption_report_form"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="12dp"
+            app:layout_constraintBottom_toTopOf="@id/showOption_store_form"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/showOption_report"
+                style="@style/Widget.Material3.MaterialTimePicker.ImageButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/Insert_new_report_farsi"
+                android:src="@drawable/ic_new_report_white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/showOption_report_text"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/showOption_report_text"
+                style="@style/TextAppearance.Material3.BodyLarge"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:fontFamily="@font/b_nazanin"
+                android:text="@string/Insert_new_report_farsi"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/showOption_report"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:background="@drawable/ic_new_option"
+            style="@style/ThemeOverlay.Material3.Button"
+            android:id="@+id/showOption_store_form"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="12dp"
+            app:layout_constraintBottom_toTopOf="@id/showOption_product_form"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/showOption_report_form">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/showOption_store"
+                style="@style/Widget.Material3.MaterialTimePicker.ImageButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_new_store_white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/showOption_store_text"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/showOption_store_text"
+                style="@style/TextAppearance.Material3.BodyLarge"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/b_nazanin"
+                android:text="@string/insert_new_store"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/showOption_store"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:background="@drawable/ic_new_option"
+            style="@style/ThemeOverlay.Material3.Button"
+            android:id="@+id/showOption_product_form"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="12dp"
+            app:layout_constraintBottom_toTopOf="@id/showOption_request_form"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/showOption_store_form">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/showOption_product"
+                style="@style/Widget.Material3.MaterialTimePicker.ImageButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_new_product_white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/showOption_product_text"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/showOption_product_text"
+                style="@style/TextAppearance.Material3.BodyLarge"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/b_nazanin"
+                android:text="@string/insert_new_product_farsi"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/showOption_product"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:background="@drawable/ic_new_option"
+            style="@style/ThemeOverlay.Material3.Button"
+            android:id="@+id/showOption_request_form"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="12dp"
+            app:layout_constraintBottom_toTopOf="@id/showOption_CloseBtn"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/showOption_product_form">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/showOption_request"
+                style="@style/Widget.Material3.MaterialTimePicker.ImageButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_new_request_white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/showOption_request_text"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/showOption_request_text"
+                style="@style/TextAppearance.Material3.BodyLarge"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/b_nazanin"
+                android:text="@string/insert_new_request_farsi"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/showOption_request"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/showOption_CloseBtn"
+            style="@style/TextAppearance.Material3.BodyMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/test2"
+            android:padding="12dp"
+            android:text="@string/close_page_farsi"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/showOption_request_form" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

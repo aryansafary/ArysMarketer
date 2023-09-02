@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/modir_Products"
+    android:icon="@drawable/ic_protucts"
+    android:title="@string/product"
+    />
+    <item
+        android:id="@+id/modir_Report"
+        android:icon="@drawable/ic_report"
+        android:title="@string/Report"
+      />
+    <item
+        android:id="@+id/modir_Store"
+        android:icon="@drawable/ic_store"
+        android:title="@string/store"
+        />
+    <item
+        android:id="@+id/modir_Freight"
+        android:icon="@drawable/ic_fright2"
+        android:title="@string/freight"
+        />
+    <item
+
+        android:id="@+id/modir_Requests"
+        android:icon="@drawable/ic_request"
+        android:title="@string/Request"
+       />
+</menu>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    android:padding="25dp"
+    tools:context=".activitys.EditCenterPharmacyActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/editCenterLottie"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:layout_margin="5dp"
+        app:lottie_rawRes="@raw/edit_card"
+        app:lottie_url="https://arysapp.com/lottie/edit_card.json"
+        app:layout_constraintBottom_toTopOf="@+id/editCenterNameForm"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/editCenterNameForm"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editCenterLottie"
+        android:hint="@string/centerName">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editCenterName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:digits="@string/digit_farsi" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/editCenterLocationForm"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editCenterNameForm"
+        android:hint="@string/centerLocation">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editCenterLocation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:digits="@string/digit_farsi" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/editCenterPhoneForm"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editCenterLocationForm"
+        android:hint="@string/centerPhone">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editCenterPhone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="number"
+            android:digits="@string/number" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/centerEditBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginLeft="55dp"
+        android:padding="15dp"
+        style="@style/TextAppearance.Material3.BodyLarge"
+        android:text="@string/editInfo"
+        app:layout_constraintBottom_toTopOf="@id/editcenterCanclBtn"
+        app:layout_constraintTop_toBottomOf="@id/editCenterPhoneForm"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/editcenterCanclBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginLeft="55dp"
+        android:padding="15dp"
+        style="@style/TextAppearance.Material3.BodyLarge"
+        android:text="@string/cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/centerEditBtn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:visibility="gone"
+        android:id="@+id/edit_center_anim_end"
+        app:lottie_rawRes="@raw/update_anim"
+        app:lottie_loop="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

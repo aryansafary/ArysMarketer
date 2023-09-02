@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="BlueLight">#17E693</color>
+    <color name="Oli">#49830F</color>
+    <color name="khas">#2683FC</color>
+    <color name="t">#26356923</color>
+    <color name="picker">#00FFFFFF</color>
+    <color name="green_light">#9A00FF1E</color>
+
+</resources>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:padding="20dp">
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/newRequest_pharmacy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp"
+                android:fontFamily="@font/b_nazanin"
+                android:padding="15dp"
+                android:text="@string/PharmacySelect"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/newRequest_Product"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:targetApi="lollipop" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/newRequest_Product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp"
+                android:fontFamily="@font/b_nazanin"
+                android:padding="15dp"
+                android:text="@string/ProductSelect"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/newRequest_count"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/newRequest_pharmacy"
+                tools:targetApi="lollipop" />
+
+<com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/newRequest_count"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="3dp"
+    android:hint="@string/count"
+    app:hintTextColor="@color/Oli"
+    android:textColorHint="@color/Oli"
+    app:layout_constraintBottom_toTopOf="@id/newRequest_offer"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/newRequest_Product">
+
+        <com.google.android.material.textfield.TextInputEditText
+android:id="@+id/submit_request_count"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:layout_margin="25dp"
+            android:autofillHints=""
+            android:fontFamily="@font/b_nazanin"
+            android:inputType="number"
+            android:maxLength="3"
+ />
+    </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/newRequest_offer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/offer"
+            android:padding="3dp"
+            app:hintTextColor="@color/Oli"
+            android:textColorHint="@color/Oli"
+            app:layout_constraintBottom_toTopOf="@id/newRequest_SubmitBtn"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/newRequest_count">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/submit_request_offer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_margin="25dp"
+            android:autofillHints=""
+            android:fontFamily="@font/b_nazanin"
+            android:inputType="number"
+            android:maxLength="2"
+ /></com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/newRequest_SubmitBtn"
+            android:backgroundTint="@color/khas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:fontFamily="@font/b_nazanin"
+            android:padding="15dp"
+            android:textColor="@color/black"
+
+            android:text="@string/SubmitRequest"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/newRequest_offer"
+            tools:targetApi="lollipop" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

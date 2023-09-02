@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/itemUserListClick"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/cover_stroke_dont_have_color"
+    android:padding="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.textview.MaterialTextView
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/itemUserListId"/>
+<ImageView
+    android:id="@+id/itemUserListImage"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:padding="20dp"
+    android:layout_margin="5dp"
+    android:background="@drawable/profile_form"
+    android:src="@drawable/ic_person"
+    app:layout_constraintBottom_toTopOf="@+id/itemUserListInformationCard"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:contentDescription="profile" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/itemUserListInformationCard"
+        app:layout_constraintTop_toBottomOf="@+id/itemUserListImage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="15dp"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/itemUserListNameForm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+android:padding="5dp"
+            app:layout_constraintBottom_toTopOf="@id/itemUserListPhoneForm"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" >
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/itemUserListNameText"
+                app:fontFamily="@font/b_nazanin"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/b_nazanin"
+                android:text="@string/FamilyName"
+                android:textStyle="bold"
+                android:textColor="@color/Oli"
+                style="@style/TextAppearance.Material3.BodyLarge"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/itemUserListName"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/itemUserListName"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                style="@style/TextAppearance.Material3.BodyMedium"
+                android:textStyle="bold"
+                android:fontFamily="@font/b_nazanin"
+                android:text="@string/FamilyName"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/itemUserListNameText"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/itemUserListPhoneForm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            app:layout_constraintBottom_toTopOf="@id/itemUserListCityForm"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/itemUserListNameForm" >
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/itemUserListPhoneText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/b_nazanin"
+                android:text="@string/phone_farsi"
+                android:textStyle="bold"
+                android:textColor="@color/Oli"
+                style="@style/TextAppearance.Material3.BodyLarge"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/itemUserListPhone"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/itemUserListPhone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                style="@style/TextAppearance.Material3.BodyMedium"
+                android:fontFamily="@font/b_nazanin"
+                android:text="@string/phone_farsi"
+                android:textStyle="bold"
+                android:textDirection="rtl"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/itemUserListPhoneText"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/itemUserListCityForm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            app:layout_constraintBottom_toTopOf="@id/itemUserListProvinceForm"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/itemUserListPhoneForm" >
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/itemUserListCityText"
+                style="@style/TextAppearance.Material3.BodyLarge"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/b_nazanin"
+                android:text="@string/centerCity"
+                android:textColor="@color/Oli"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/itemUserListCity"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/itemUserListCity"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                style="@style/TextAppearance.Material3.BodyMedium"
+                android:fontFamily="@font/b_nazanin"
+                android:text="@string/city"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/itemUserListCityText"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/itemUserListProvinceForm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            app:layout_constraintBottom_toTopOf="@id/itemUserListAddressForm"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/itemUserListCityForm" >
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/itemUserListProvinceText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/b_nazanin"
+                android:text="@string/province"
+                android:textColor="@color/Oli"
+                style="@style/TextAppearance.Material3.BodyLarge"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/itemUserListProvince"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/itemUserListProvince"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                style="@style/TextAppearance.Material3.BodyMedium"
+                android:fontFamily="@font/b_nazanin"
+                android:text="@string/province"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/itemUserListProvinceText"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/itemUserListAddressForm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            app:layout_constraintBottom_toTopOf="@id/itemUserListCompanyForm"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/itemUserListProvinceForm" >
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/itemUserListAddressText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/b_nazanin"
+                android:text="@string/Address"
+                android:textStyle="bold"
+                android:textColor="@color/Oli"
+                style="@style/TextAppearance.Material3.BodyLarge"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/itemUserListAddress"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/itemUserListAddress"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                style="@style/TextAppearance.Material3.BodyMedium"
+                android:fontFamily="@font/b_nazanin"
+                android:text="@string/Address"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/itemUserListAddressText"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/itemUserListCompanyForm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            app:layout_constraintBottom_toTopOf="@id/itemUserListCompanyAddressForm"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/itemUserListAddressForm" >
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/itemUserListCompanyText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/b_nazanin"
+                android:text="@string/company"
+                android:textStyle="bold"
+                android:textColor="@color/Oli"
+                style="@style/TextAppearance.Material3.BodyLarge"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/itemUserListCompany"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/itemUserListCompany"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                style="@style/TextAppearance.Material3.BodyMedium"
+                android:fontFamily="@font/b_nazanin"
+                android:textDirection="rtl"
+                android:text="@string/company"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/itemUserListCompanyText"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/itemUserListCompanyAddressForm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            app:layout_constraintBottom_toTopOf="@id/itemUserListSideForm"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/itemUserListCompanyForm" >
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/itemUserListCompanyAddressText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/b_nazanin"
+                android:text="@string/companyAddress"
+                android:textColor="@color/Oli"
+                style="@style/TextAppearance.Material3.BodyLarge"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/itemUserListCompanyAddress"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/itemUserListCompanyAddress"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                style="@style/TextAppearance.Material3.BodyMedium"
+                android:fontFamily="@font/b_nazanin"
+                android:text="@string/companyAddress"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/itemUserListCompanyAddressText"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/itemUserListSideForm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            app:layout_constraintBottom_toTopOf="@id/itemUserListBarthdayForm"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/itemUserListCompanyAddressForm" >
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/itemUserListSideText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/b_nazanin"
+                android:text="@string/Side_farsi"
+                android:textColor="@color/Oli"
+                style="@style/TextAppearance.Material3.BodyLarge"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/itemUserListSide"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/itemUserListSide"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                style="@style/TextAppearance.Material3.BodyMedium"
+                android:fontFamily="@font/b_nazanin"
+                android:text="@string/Side_farsi"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/itemUserListSideText"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/itemUserListBarthdayForm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/itemUserListSideForm" >
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/itemUserListBarthdayText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/b_nazanin"
+                android:text="@string/Barthday_farsi"
+                android:textColor="@color/Oli"
+                style="@style/TextAppearance.Material3.BodyLarge"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/itemUserListBarthday"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/itemUserListBarthday"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                style="@style/TextAppearance.Material3.BodyMedium"
+                android:fontFamily="@font/b_nazanin"
+                android:text="@string/Barthday_farsi"
+                android:textStyle="bold"
+                android:textDirection="rtl"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/itemUserListBarthdayText"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>

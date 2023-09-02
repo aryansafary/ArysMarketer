@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activitys.NewUserActivity">
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/newuser_anim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:lottie_rawRes="@raw/newuser"
+        android:layout_marginTop="70dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:layout_constraintBottom_toTopOf="@id/newUser_form"/>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/newUser_form"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/newuser_anim"
+    android:layout_width="match_parent"
+    android:layout_height="0dp">
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/NewUser_side_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        style="@style/TextAppearance.Material3.BodyLarge"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/Oli"
+        android:text="@string/side_in_company"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/NewUser_username"
+        app:layout_constraintLeft_toRightOf="@id/NewUser_side"/>
+<Spinner
+   android:id="@+id/NewUser_side"
+    android:entries="@array/app_arrays"
+   android:gravity="center"
+
+    style="@style/Widget.AppCompat.Spinner.Underlined"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toTopOf="@id/NewUser_username"
+    app:layout_constraintRight_toLeftOf="@+id/NewUser_side_text"
+    app:layout_constraintLeft_toLeftOf="parent"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/NewUser_username"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:hintTextColor="@color/Oli"
+        android:textColorHint="@color/Oli"
+        app:layout_constraintBottom_toTopOf="@id/NewUser_password"
+       app:layout_constraintTop_toBottomOf="@id/NewUser_side"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:startIconDrawable="@drawable/ic_user"
+        app:startIconTint="@color/Oli"
+        app:endIconMode="clear_text"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textDirection="ltr"
+        android:hint="@string/username_farsi"
+        tools:targetApi="jelly_bean_mr1">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/newUser_username"
+            android:digits="@string/digit_english"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:maxLength="45"
+            android:textDirection="ltr"
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/NewUser_password"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:hintTextColor="@color/Oli"
+        android:textColorHint="@color/Oli"
+        app:layout_constraintBottom_toTopOf="@id/NewUser_submit_btn"
+        app:layout_constraintTop_toBottomOf="@id/NewUser_username"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:startIconDrawable="@drawable/ic_pass"
+        app:startIconTint="@color/Oli"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:endIconMode="password_toggle"
+        app:passwordToggleEnabled="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textDirection="ltr"
+        android:hint="@string/password_farsi"
+        tools:targetApi="jelly_bean_mr1">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/newUser_password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:gravity="bottom"
+            android:maxLength="45"
+            android:textDirection="ltr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/NewUser_submit_btn"
+        android:textStyle="bold"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        style="@style/TextAppearance.AppCompat.Display1"
+        android:fontFamily="@font/b_nazanin"
+        android:hint="@string/insert_user"
+        android:maxLength="40"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/NewUser_password"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/NewUser_loading"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="false"
+        android:visibility="gone"
+        style="@style/Theme.AppCompat.DayNight.Dialog.MinWidth"
+        app:lottie_rawRes="@raw/user_loading"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

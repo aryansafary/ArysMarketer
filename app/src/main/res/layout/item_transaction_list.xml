@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/itemTransactionListCardView"
+            android:padding="15dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/itemTransactionListStatusForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/itemTransactionListNameForm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toTopOf="@id/itemTransactionListAmountForm"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/itemTransactionListNameText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/b_nazanin"
+                    android:textSize="25sp"
+                    android:text="@string/buyName"
+                    android:textColor="@color/Oli"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/itemTransactionListName"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/itemTransactionListName"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textSize="20sp"
+                    android:layout_margin="20dp"
+                    android:fontFamily="@font/b_nazanin"
+                    android:text="@string/buyName"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/itemTransactionListNameText"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/itemTransactionListAmountForm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toTopOf="@id/itemTransactionListCardForm"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/itemTransactionListNameForm">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/itemTransactionListAmountText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/b_nazanin"
+                    android:textSize="25sp"
+                    android:text="@string/amount"
+                    android:textColor="@color/Oli"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/itemTransactionListAmount"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/itemTransactionListAmount"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textSize="20sp"
+                    android:layout_margin="20dp"
+                    android:fontFamily="@font/b_nazanin"
+                    android:text="@string/amount"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/itemTransactionListAmountText"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/itemTransactionListCardForm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toTopOf="@id/itemTransactionListCodeForm"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/itemTransactionListAmountForm">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/itemTransactionListCardText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/b_nazanin"
+                    android:textSize="25sp"
+                    android:text="@string/card_number"
+                    android:textColor="@color/Oli"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/itemTransactionListCard"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/itemTransactionListCard"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textSize="20sp"
+                    android:layout_margin="20dp"
+                    android:fontFamily="@font/b_nazanin"
+                    android:text="@string/card_number"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/itemTransactionListCardText"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/itemTransactionListCodeForm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toTopOf="@+id/itemTransactionListDataForm"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/itemTransactionListCardForm">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/itemTransactionListCodeText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textSize="25sp"
+                    android:fontFamily="@font/b_nazanin"
+                    android:text="@string/code_pagiri"
+                    android:textColor="@color/Oli"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/itemTransactionListCode"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/itemTransactionListCode"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textSize="20sp"
+                    android:layout_margin="20dp"
+                    android:fontFamily="@font/b_nazanin"
+                    android:text="@string/code_pagiri"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/itemTransactionListCodeText"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/itemTransactionListDataForm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/itemTransactionListCodeForm">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/itemTransactionListDataText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textSize="25sp"
+                    android:fontFamily="@font/b_nazanin"
+                    android:text="@string/data"
+                    android:textColor="@color/Oli"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/itemTransactionListData"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/itemTransactionListData"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textSize="20sp"
+                    android:layout_margin="20dp"
+                    android:fontFamily="@font/b_nazanin"
+                    android:text="@string/data"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/itemTransactionListDataText"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/itemTransactionListStatusForm"
+            android:background="@drawable/price_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/itemTransactionListCardView">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/itemTransactionListStatusText"
+                android:layout_margin="10dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="25sp"
+                android:fontFamily="@font/b_nazanin"
+                android:text="@string/status"
+                android:textColor="@color/Oli"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/itemTransactionListStatus"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/itemTransactionListStatus"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:layout_margin="20dp"
+                android:fontFamily="@font/b_nazanin"
+                android:text="@string/status"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/itemTransactionListStatusText"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

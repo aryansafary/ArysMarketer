@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activitys.MainReportActivity">
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/ReportTab"
+        style="@style/Widget.Material3.TabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/ReportContainer"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/ReportTabMap"
+            android:icon="@drawable/ic_map_logo"
+            style="@style/MaterialAlertDialog.Material3.Title.Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Routing"
+            />
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/ReportTabReport"
+            android:icon="@drawable/ic_report_logo"
+            style="@style/TextAppearance.AppCompat.Widget.DropDownItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Report"
+            />
+
+
+    </com.google.android.material.tabs.TabLayout>
+    <FrameLayout
+        android:id="@+id/ReportContainer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ReportTab"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

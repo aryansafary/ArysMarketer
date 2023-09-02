@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.FreightFragment">
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_marginTop="25dp"
+        android:visibility="gone"
+        android:id="@+id/freight_text_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/request_text_background"
+        style="@style/TextAppearance.AppCompat.Display1"
+        android:fontFamily="@font/b_nazanin"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/freight_text_background2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_marginTop="25dp"
+        android:visibility="gone"
+        android:id="@+id/freight_text_background2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="@string/request_text_background"
+        style="@style/TextAppearance.AppCompat.Display1"
+        android:fontFamily="@font/b_nazanin"
+        android:textStyle="bold"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/list_empty"
+       app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/freight_text_background"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/freight_recycler"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:listitem="@layout/freight_item"
+   />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

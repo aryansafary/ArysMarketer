@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activitys.InsertStoreActivity">
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/InsertStore_product"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:fontFamily="@font/b_nazanin"
+        android:padding="15dp"
+        android:text="@string/ProductSelect"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/InsertStore_count_form"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/InsertStore_count_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:hint="@string/insert_store_count"
+        app:hintTextColor="@color/Oli"
+        android:textColorHint="@color/Oli"
+      app:layout_constraintBottom_toTopOf="@id/InsertStore_btn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/InsertStore_product">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/InsertStore_count"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:layout_margin="25dp"
+            android:autofillHints=""
+            android:fontFamily="@font/b_nazanin"
+            android:inputType="number"
+            android:maxLength="4"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/InsertStore_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:fontFamily="@font/b_nazanin"
+        android:padding="15dp"
+        android:text="@string/insertStore"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/InsertStore_count_form" />
+    <com.airbnb.lottie.LottieAnimationView
+        android:visibility="gone"
+        android:id="@+id/InsertStoreAnim"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/add_ticjson"
+        app:layout_constraintTop_toBottomOf="@id/InsertStore_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <group>
+
+    <item
+        android:checked="true"
+        android:id="@+id/productEdit"
+        android:title="@string/edit_product_farsi"
+        android:icon="@drawable/ic_edit" />
+    <item
+        android:checked="true"
+        android:id="@+id/productDelete"
+        android:title="@string/DeleteProduct"
+        android:icon="@drawable/ic_delete" />
+
+  </group>
+</menu>

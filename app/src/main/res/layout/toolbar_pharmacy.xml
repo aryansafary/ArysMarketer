@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.MaterialToolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/centerListToolbar"
+    android:background="@color/Oli"
+    android:layout_height="?attr/actionBarSize">
+    <com.google.android.material.textview.MaterialTextView
+        android:text="@string/centerListText"
+        android:fontFamily="@font/b_nazanin"
+        android:layout_gravity="left"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        style="@style/TextAppearance.Material3.ActionBar.Title"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"/>
+   <ImageView
+       android:id="@+id/centerListInsert"
+       android:src="@drawable/ic_add"
+       style="@style/Widget.MaterialComponents.TimePicker.ImageButton"
+       android:layout_gravity="right"
+       android:layout_width="wrap_content"
+       android:layout_height="match_parent"
+       android:contentDescription="@string/insert" />
+
+
+</com.google.android.material.appbar.MaterialToolbar>

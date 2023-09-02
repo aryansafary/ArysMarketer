@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/calender_list"
+android:background="@drawable/cover_stroke_dont_have_color"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintBottom_toBottomOf="parent">
+
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/calender_saturday_day"
+        android:background="@drawable/cover_stroke_dont_have_color"
+        android:textStyle="bold"
+        android:padding="25dp"
+        style="@style/TextAppearance.Material3.BodyLarge"
+        app:fontFamily="@font/iran"
+        android:text="@string/saturday_farsi"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/calender_saturday_region"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"/>
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/calender_saturday_region"
+        android:background="@drawable/cover_stroke_dont_have_color"
+        android:textStyle="bold"
+        android:padding="25dp"
+        style="@style/TextAppearance.Material3.BodyLarge"
+        android:text="@string/region"
+        app:fontFamily="@font/iran"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/calender_saturday_day"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"/>
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/calender_saturday_description"
+        android:background="@drawable/cover_stroke_dont_have_color"
+        android:textStyle="bold"
+        android:padding="25dp"
+        app:fontFamily="@font/iran"
+        style="@style/TextAppearance.Material3.BodyLarge"
+        android:text="@string/comment"
+        app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintTop_toBottomOf="@id/calender_saturday_region"
+      app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+

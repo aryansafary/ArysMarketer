@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.textfield.TextInputLayout
+        android:hint="@string/report_today"
+        app:hintTextColor="@color/Oli"
+        android:textColorHint="@color/Oli"
+        android:textDirection="rtl"
+        android:id="@+id/ReportText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/ReportSubmit"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/newReport_description"
+            android:scrollbars="vertical"
+            android:inputType="textMultiLine"
+            android:maxLength="2000"
+            android:textDirection="rtl"
+            android:fontFamily="@font/b_nazanin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="گزارشکار:" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_margin="40dp"
+        android:text="@string/SubmitData"
+        android:textStyle="bold"
+        android:id="@+id/ReportSubmit"
+        app:layout_constraintTop_toBottomOf="@id/ReportText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

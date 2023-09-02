@@ -1,0 +1,117 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+}
+
+android {
+
+    compileSdkVersion 33
+    //buildToolsVersion "30.0.3"
+    defaultConfig {
+        applicationId "aryan.safary.sinoohe"
+        minSdkVersion 24
+        targetSdkVersion 33
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        packagingOptions {
+            exclude 'META-INF/services/javax.annotation.processing.Processor'
+        }
+
+
+
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildFeatures {
+        viewBinding true
+    }
+    ndkVersion '22.0.7026061'
+    namespace 'aryan.safary.sinoohe'
+}
+
+dependencies {
+    implementation 'com.facebook.infer.annotation:infer-annotation:0.18.0'
+    implementation 'com.github.aliab:Persian-Date-Picker-Dialog:1.8.0'
+
+
+
+    implementation "androidx.security:security-crypto:1.0.0"
+
+    // For Identity Credential APIs
+    implementation "androidx.security:security-identity-credential:1.0.0-alpha03"
+
+    // For App Authentication APIs
+    implementation "androidx.security:security-app-authenticator:1.0.0-alpha02"
+
+    // For App Authentication API testing
+    androidTestImplementation "androidx.security:security-app-authenticator:1.0.0-alpha02"
+
+
+
+
+    //FireBase
+    implementation 'com.google.firebase:firebase-messaging:23.1.2'
+
+
+    implementation platform('com.google.firebase:firebase-bom:31.2.2')
+    implementation 'com.google.firebase:firebase-analytics'
+//For Lottie Anim
+    implementation 'com.daimajia.androidanimations:library:2.4@aar'
+    implementation 'com.airbnb.android:lottie:6.0.0'
+//For Map
+    //Neshan sdk library
+    implementation 'neshan-android-sdk:mobile-sdk:1.0.1'
+    implementation 'neshan-android-sdk:services-sdk:1.0.0'
+    implementation 'neshan-android-sdk:common-sdk:0.0.2'
+
+    //Play Services
+    implementation 'com.google.android.gms:play-services-gcm:16.1.0'
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+
+
+    // dexter runtime permissions
+    implementation 'com.karumi:dexter:6.2.3'
+    //_____
+
+ //implementation 'ir.map:map-sdk:4.0.2'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.preference:preference:1.2.0'
+    implementation 'org.osmdroid:osmdroid-android:6.1.14'
+    // For Load Photo
+    implementation('com.soundcloud.android:android-crop:1.0.1@aar')
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.facebook.fresco:fresco:2.6.0'
+    // For Save Data In MySql
+
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.9.0'
+//rxjava
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.21'
+    implementation 'com.google.code.gson:gson:2.10.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+// Every Library
+    implementation "androidx.viewpager2:viewpager2:1.0.0"
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.navigation:navigation-fragment:2.5.3'
+    implementation 'androidx.navigation:navigation-ui:2.5.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    apply plugin : 'com.google.gms.google-services'
+   
+}

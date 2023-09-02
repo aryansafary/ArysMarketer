@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "349002084160",
+    "project_id": "arys-marketer",
+    "storage_bucket": "arys-marketer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:349002084160:android:c081a7bbf5d45ac96214a5",
+        "android_client_info": {
+          "package_name": "aryan.safary.sinoohe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "349002084160-c973qtemar5ptlrli4b2rrmcuk4utvnf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "aryan.safary.sinoohe",
+            "certificate_hash": "4ebb4e71997c984db4aa6a122af8a44ec2f2f62d"
+          }
+        },
+        {
+          "client_id": "349002084160-srd4o28t1ak4s596mgnhoon8gcklh0f2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqankpLZ2tJGs2zsq_QkaiZRu1ovarFCU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "349002084160-srd4o28t1ak4s596mgnhoon8gcklh0f2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

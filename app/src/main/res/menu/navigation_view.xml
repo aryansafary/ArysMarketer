@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+<item
+    android:title="@string/Edit_profile_farsi"
+    android:icon="@drawable/edit_user"
+    android:id="@+id/nav_edit" />
+    <group>
+    <item
+        android:title="@string/set_data_user"
+        android:icon="@drawable/ic_calender"
+        android:id="@+id/set_data_user" />
+        <item
+            android:title="@string/centerList"
+            android:icon="@drawable/ic_centers"
+            android:id="@+id/centerList"
+            />
+        <item
+            android:title="@string/UserList"
+            android:icon="@drawable/ic_person"
+            android:id="@+id/UserList"
+           />
+
+    <item
+    android:title="@string/NewUser"
+    android:icon="@drawable/ic_newuser"
+    android:id="@+id/NewUser"
+    />
+    </group>
+    <item
+        android:title="@string/subscription_acount_farsi"
+        android:icon="@drawable/ic_money_sub"
+        android:id="@+id/nav_payment"
+        />
+    <group
+        android:orderInCategory="@integer/material_motion_duration_medium_2"
+        android:checkableBehavior="none">
+
+    <item
+        android:title="@string/goToWork_farsi"
+        android:icon="@drawable/baseline_add_location_alt_24"
+        android:id="@+id/nav_setting"
+         />
+    <item
+        android:title="@string/logout_farsi"
+        android:icon="@drawable/ic_logout"
+        android:id="@+id/nav_logout"
+         />
+
+    </group>
+
+
+</menu>

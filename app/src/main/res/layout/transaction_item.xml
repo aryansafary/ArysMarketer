@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:padding="10dp"
+        android:layout_margin="10dp"
+      android:layout_height="match_parent"
+      android:layout_width="match_parent"
+        >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/store_form0"
+        app:layout_constraintBottom_toTopOf="@+id/Store_form10"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/cover_stroke_dont_have_color">
+
+
+
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/Store_form1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toTopOf="@id/Store_form2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/Store_sender_tex"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/b_nazanin"
+                android:textSize="25sp"
+                android:text="@string/sender"
+                android:textColor="@color/Oli"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/StoreItem_sender"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/StoreItem_sender"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:layout_margin="20dp"
+                android:fontFamily="@font/b_nazanin"
+                android:text="@string/sender"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/Store_sender_tex"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/Store_form2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toTopOf="@id/Store_form3"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Store_form1">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/StoreItem_receiver_tex"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/b_nazanin"
+                android:textSize="25sp"
+                android:text="@string/receiver"
+                android:textColor="@color/Oli"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/StoreItem_receiver"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/StoreItem_receiver"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:layout_margin="20dp"
+                android:fontFamily="@font/b_nazanin"
+                android:text="@string/receiver"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/StoreItem_receiver_tex"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/Store_form3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toTopOf="@id/Store_form4"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Store_form3">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/StoreItem_NameProduct_tex"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="25sp"
+                android:fontFamily="@font/b_nazanin"
+                android:text="@string/Product.Name"
+                android:textColor="@color/Oli"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/StoreItem_NameProduct"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/StoreItem_NameProduct"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:layout_margin="20dp"
+                android:fontFamily="@font/b_nazanin"
+                android:text="@string/Product.Name"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/StoreItem_NameProduct_tex"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/Store_form4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toTopOf="@id/Store_form5"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Store_form3">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/StoreItem_count_tex"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/b_nazanin"
+                android:textSize="25sp"
+                android:text="@string/count"
+                android:textColor="@color/Oli"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/StoreItem_count"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/StoreItem_count"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:layout_margin="20dp"
+                android:fontFamily="@font/b_nazanin"
+                android:text="@string/count"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/StoreItem_count_tex"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/Store_form5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toTopOf="@id/Store_form6"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Store_form4">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/StoreItem_offer_tex"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/b_nazanin"
+                android:textSize="25sp"
+                android:text="@string/offer"
+                android:textColor="@color/Oli"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/StoreItem_offer"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/StoreItem_offer"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:layout_margin="20dp"
+                android:fontFamily="@font/b_nazanin"
+                android:text="@string/offer"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/StoreItem_offer_tex"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/Store_form6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Store_form5">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/StoreItem_data_tex"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/b_nazanin"
+                android:textSize="25sp"
+                android:text="@string/data"
+                android:textColor="@color/Oli"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/StoreItem_data"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/StoreItem_data"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:layout_margin="20dp"
+                android:fontFamily="@font/b_nazanin"
+                android:text="@string/data"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/StoreItem_data_tex"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Store_form10"
+        android:background="@drawable/price_line"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/store_form0">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/StoreItem_status_tex"
+            android:layout_margin="10dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="25sp"
+            android:fontFamily="@font/b_nazanin"
+            android:text="@string/status"
+            android:textColor="@color/Oli"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/StoreItem_status"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/StoreItem_status"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/b_nazanin"
+            android:text="@string/status"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/StoreItem_status_tex"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>

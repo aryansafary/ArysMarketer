@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activitys.NewProductActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_gravity="top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/newProduct_image"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_image"
+            android:background="@drawable/ic_new_product_image_form"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/newProduct_form"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:contentDescription="@string/new_product_tex" />
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/newProduct_form"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintTop_toBottomOf="@id/newProduct_image"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    >
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/newProduct_name_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/newProduct_brand_form"
+        android:hint="@string/Product.Name"
+        app:hintTextColor="@color/Oli"
+        android:textColorHint="@color/Oli">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/newProduct_name"
+            android:digits="@string/digit_farsi"
+            android:fontFamily="@font/b_nazanin"
+            android:maxLength="70"
+            android:inputType="textPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/newProduct_brand_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/newProduct_name_form"
+        app:layout_constraintBottom_toTopOf="@id/newProduct_description_form"
+        android:hint="@string/productsBrand"
+        app:hintTextColor="@color/Oli"
+        android:textColorHint="@color/Oli">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/newProduct_brand"
+            android:inputType="textPersonName"
+            android:maxLength="70"
+            android:fontFamily="@font/b_nazanin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/newProduct_description_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/newProduct_brand_form"
+        app:layout_constraintBottom_toTopOf="@id/newProduct_price_form"
+        android:hint="@string/Product.Description"
+        app:hintTextColor="@color/Oli"
+        android:textColorHint="@color/Oli">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/newProduct_description"
+            android:scrollbars="vertical"
+          android:nestedScrollingEnabled="true"
+            android:inputType="textMultiLine"
+            android:maxLength="800"
+            android:maxLines="8"
+            android:lines="8"
+            android:fontFamily="@font/b_nazanin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/newProduct_price_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/newProduct_description_form"
+        app:layout_constraintBottom_toTopOf="@id/newProduct_submit_btn"
+        android:hint="@string/product.price"
+        app:hintTextColor="@color/Oli"
+        android:textColorHint="@color/Oli">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/newProduct_price"
+            android:digits="@string/number"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:inputType="number"
+            android:fontFamily="@font/b_nazanin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/newProduct_submit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/send_farsi"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        style="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/newProduct_price_form"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:visibility="gone"
+            android:id="@+id/newProductLottie"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/add_product"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

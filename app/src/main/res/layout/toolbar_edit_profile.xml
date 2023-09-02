@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.MaterialToolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/EditProfileToolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/Oli"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<com.google.android.material.textview.MaterialTextView
+    android:text="@string/editProfile"
+    android:fontFamily="@font/b_nazanin"
+    android:layout_gravity="left"
+    android:layout_marginTop="5dp"
+    android:gravity="center"
+    style="@style/TextAppearance.Material3.ActionBar.Title"
+    android:textStyle="bold"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/EditProfileSave"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="@string/save"
+        android:textStyle="bold"
+        android:layout_margin="2dp"
+        android:textAlignment="viewEnd"
+        style="@style/TextAppearance.Material3.ActionBar.Title"
+        android:fontFamily="@font/b_nazanin"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_gravity="right"
+        app:backgroundTint="@color/Oli"/>
+</com.google.android.material.appbar.MaterialToolbar>

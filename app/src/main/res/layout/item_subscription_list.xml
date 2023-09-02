@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/itemSubscriptionListCard"
+
+        android:padding="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/itemSubscriptionListStatusForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/itemSubscriptionListNameForm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toTopOf="@id/itemSubscriptionListDayStartForm"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/itemSubscriptionListNameText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/b_nazanin"
+            android:textSize="25sp"
+            android:text="@string/buyName"
+            android:textColor="@color/Oli"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/itemSubscriptionListName"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/itemSubscriptionListName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/b_nazanin"
+            android:text="@string/buyName"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/itemSubscriptionListNameText"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/itemSubscriptionListDayStartForm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toTopOf="@id/itemSubscriptionListDayEndForm"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/itemSubscriptionListNameForm">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/itemSubscriptionListDayStartText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/b_nazanin"
+            android:textSize="25sp"
+            android:text="@string/day_start"
+            android:textColor="@color/Oli"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/itemSubscriptionListDayStart"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/itemSubscriptionListDayStart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/b_nazanin"
+            android:text="@string/day_start"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/itemSubscriptionListDayStartText"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/itemSubscriptionListDayEndForm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toTopOf="@id/itemSubscriptionListTimeForm"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/itemSubscriptionListDayStartForm">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/itemSubscriptionListDayEndText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/b_nazanin"
+            android:textSize="25sp"
+            android:text="@string/day_end"
+            android:textColor="@color/Oli"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/itemSubscriptionListDayEnd"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/itemSubscriptionListDayEnd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/b_nazanin"
+            android:text="@string/day_end"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/itemSubscriptionListDayEndText"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/itemSubscriptionListTimeForm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/itemSubscriptionListDayEndForm">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/itemSubscriptionListTimeText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="25sp"
+            android:fontFamily="@font/b_nazanin"
+            android:text="@string/hours"
+            android:textColor="@color/Oli"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/itemSubscriptionListTime"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/itemSubscriptionListTime"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/b_nazanin"
+            android:text="@string/hours"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/itemSubscriptionListTimeText"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/itemSubscriptionListStatusForm"
+        android:background="@drawable/price_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/itemSubscriptionListCard">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/itemSubscriptionListStatusText"
+            android:layout_margin="10dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="25sp"
+            android:fontFamily="@font/b_nazanin"
+            android:text="@string/status"
+            android:textColor="@color/Oli"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/itemSubscriptionListStatus"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/itemSubscriptionListStatus"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/b_nazanin"
+            android:text="@string/status"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/itemSubscriptionListStatusText"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

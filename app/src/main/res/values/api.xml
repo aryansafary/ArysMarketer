@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="BaseUrl">https://ArysApp.com/Server/</string>
+    <string name="CallBackUri">https://arysapp.com/Server/CallBackUri.php</string>
+    <string name="ATM_Uri">https://nextpay.org/nx/gateway/payment/</string>
+    <string name="ImageUrl">https://ArysApp.com/Server/products/%S.jpg</string>
+    <string name="NexPay_api_key">e1f468f0-9e14-436a-bcb8-4f2e291a85c1</string>
+    <!-- Image -->
+
+
+</resources>
