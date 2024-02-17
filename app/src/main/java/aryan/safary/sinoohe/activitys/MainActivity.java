@@ -241,7 +241,7 @@ private boolean IsEmpty(){
         System.exit(0); // برنامه بسته می‌شود
                     MySharedPrefrence.getInstance(MainActivity.this).ClearSharedPrefrence();
         FirebaseMessaging.getInstance().getToken().addOnCompleteListener(task -> {
-            if(task.isSuccessful())
+            if(task.isSuccessful()&&MySharedPrefrence.getInstance(MainActivity.this).getToken().isEmpty())
             {
                 MySharedPrefrence.getInstance(MainActivity.this).setToken(task.getResult());
             }
