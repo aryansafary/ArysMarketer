@@ -162,15 +162,19 @@ private boolean IsEmpty(){
                                 MySharedPrefrence.getInstance(MainActivity.this).setIsLogin(true);
                                 break;
                             case 406:
+                                Log.e("Error","User Not Find");
                                 Toast.makeText(MainActivity.this, "همچین کاربری یافت نشد.", Toast.LENGTH_LONG).show();
                                 break;
                             case 500:
+                                Log.e("Error","Error request");
                                 Toast.makeText(MainActivity.this, "خطا!", Toast.LENGTH_LONG).show();
                                 break;
                             case 400:
+                                Log.e("Error","Wrong Input");
                                 Toast.makeText(MainActivity.this, "در وارد کردن اطلاعات دقت فرمایید", Toast.LENGTH_LONG).show();
                                 break;
                             default:
+                                Log.e("Error",String.valueOf(response.errorBody()));
                                 Toast.makeText(MainActivity.this, "خطایی وجود دارد", Toast.LENGTH_LONG).show();
                                 break;
 
@@ -191,7 +195,7 @@ private boolean IsEmpty(){
 
                 @Override
                 public void onFailure(@NonNull Call<JsonResponseModel> call, @NonNull Throwable t) {
-                    Log.d("error", t.getMessage());
+                    Log.d("error", Objects.requireNonNull(t.getMessage()));
 
                 }
             });
