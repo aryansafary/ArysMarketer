@@ -62,7 +62,8 @@ Loading.setVisibility(View.GONE);
         username = findViewById(R.id.LoginUsername);
         password = findViewById(R.id.LoginPassword);
         Loading = findViewById(R.id.Main_loading);
-        token=MySharedPrefrence.getInstance(MainActivity.this).getToken();
+        //token=MySharedPrefrence.getInstance(MainActivity.this).getToken();
+        token="token";
     }
 
     private void init() {
@@ -147,7 +148,8 @@ private boolean IsEmpty(){
         if (IsEmpty()) {
             String u = Objects.requireNonNull(username.getText()).toString();
             String p = Objects.requireNonNull(password.getText()).toString();
-            RetrofitClient.getInstance(MainActivity.this).getApi().loginUser(u, p, token).enqueue(new Callback<JsonResponseModel>() {
+           RetrofitClient.getInstance(MainActivity.this).
+                    getApi().loginUser(u, p, token).enqueue(new Callback<JsonResponseModel>() {
                 @Override
                 public void onResponse(@NonNull Call<JsonResponseModel> call, @NonNull Response<JsonResponseModel> response) {
                     if (response.isSuccessful()) {
@@ -178,7 +180,7 @@ private boolean IsEmpty(){
                     } else {
 
                         assert response.errorBody() != null;
-                        Log.d("Error", "onResponse: " + response.message() + response.errorBody().source() + response.code());
+                        Log.d("Error", "onResponse: " +response.code()+response.message());
                         Loading.setAnimationFromUrl("https://assets1.lottiefiles.com/packages/lf20_pqpmxbxp.json");
                         timerAnim.start();
 

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="BaseUrl">http://192.168.100.6/Sinoohe\Api_Php/</string>
-    <string name="CallBackUri">http://192.168.100.6/Sinoohe\Api_Php/CallBackUri.php</string>
+    <string name="BaseUrl">http://192.168.1.5/Sinoohe\Api_Php/</string>
+    <string name="CallBackUri">http://192.168.1.5/Sinoohe\Api_Php/CallBackUri.php</string>
     <string name="ATM_Uri">https://nextpay.org/nx/gateway/payment/</string>
-    <string name="ImageUrl">http://192.168.100.6/Sinoohe\Api_Php/products/%S.jpg</string>
+    <string name="ImageUrl">http://192.168.1.5/Sinoohe\Api_Php/products/%S.jpg</string>
     <string name="NexPay_api_key">e1f468f0-9e14-436a-bcb8-4f2e291a85c1</string>
     <!-- Image -->
 

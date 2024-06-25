@@ -133,7 +133,7 @@ public interface api {
 
 
     @FormUrlEncoded
-    @POST("Login.php")
+    @POST("http://192.168.100.6/Sinoohe/Api_Php/Login.php")
     Call<JsonResponseModel> loginUser(@Field("username") String username ,
                                        @Field("password") String password ,
                                       @Field("token") String token);
