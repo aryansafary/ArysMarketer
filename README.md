@@ -1,2 +1,2 @@
 # Arys Marketer
-![Splash Screen](assets/splash-screen.gif)
+![Splash Screen](https://github.com/aryansafary/ArysMarketer/blob/master/image-data/sp.gif)
